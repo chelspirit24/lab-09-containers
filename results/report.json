@@ -1,0 +1,91 @@
+{
+  "documents": 101,
+  "runs_by_machine": [
+    {
+      "host": "169.254.28.93",
+      "books": 1
+    },
+    {
+      "host": "1db6e5befa42",
+      "books": 101
+    },
+    {
+      "host": "5f9e1dd4a60b",
+      "books": 1
+    },
+    {
+      "host": "Tams-MacBook-Air.local",
+      "books": 3
+    },
+    {
+      "host": "f6f21c05c1f3",
+      "books": 3
+    },
+    {
+      "host": "ip-172-31-24-63",
+      "books": 100
+    }
+  ],
+  "last_processed": [
+    {
+      "_id": "pg996.txt",
+      "author": "Miguel de Cervantes Saavedra",
+      "bucket": "public-gxn6ry",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-24-63",
+          "at": "2026-11-04 02:27:45.531000"
+        },
+        {
+          "host": "1db6e5befa42",
+          "at": "2026-11-18 16:00:50.117000"
+        }
+      ],
+      "title": "Don Quixote",
+      "unique_words": 15574,
+      "vocabulary_ratio": 0.0359,
+      "word_count": 433304
+    },
+    {
+      "_id": "pg98.txt",
+      "author": "Charles Dickens",
+      "bucket": "public-gxn6ry",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-24-63",
+          "at": "2026-11-04 02:27:45.181000"
+        },
+        {
+          "host": "1db6e5befa42",
+          "at": "2026-11-18 16:00:48.655000"
+        }
+      ],
+      "title": "A Tale of Two Cities",
+      "unique_words": 9698,
+      "vocabulary_ratio": 0.07,
+      "word_count": 138490
+    },
+    {
+      "_id": "pg963.txt",
+      "author": "Charles Dickens",
+      "bucket": "public-gxn6ry",
+      "language": "English",
+      "runs": [
+        {
+          "host": "ip-172-31-24-63",
+          "at": "2026-11-04 02:27:44.974000"
+        },
+        {
+          "host": "1db6e5befa42",
+          "at": "2026-11-18 16:00:48.128000"
+        }
+      ],
+      "title": "Little Dorrit",
+      "unique_words": 14784,
+      "vocabulary_ratio": 0.0428,
+      "word_count": 345231
+    }
+  ]
+}

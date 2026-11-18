@@ -8,7 +8,7 @@ Assume you want to share your image with others and make it publicly available o
 
 **Your answer:** Give two reasons why this is a bad idea. Think of who could then read your credentials, and of what happens when your Learner Lab session ends.
 
-...
+Doing this would expose your AWS credentials to anyone that pulls the image. Also since credentials will eventually expire, hardcoding it into the file would eventually stop working, and therefore the image would not show anymore. 
 
 ## 2. Where did the Atlas password come from?
 
@@ -18,7 +18,7 @@ In Step 4, you ran the analysis once with `-v ~/.aws:/home/app/.aws:ro` only, wi
 
 **Your answer:** Explain, step by step, where the container found the Atlas settings in that run.
 
-...
+get_atlas_settings() includes boto3 to connect to the AWS Systems Manager in us-east-1. It then fetched and decrypted the mongodb_credentials SSM parameter and parsed its JSON value to get the Atlas credentials. 
 
 ## 3. Same tag, different image
 
@@ -26,4 +26,7 @@ Run `docker images book-analysis`, and note the image ID of `book-analysis:0.1.0
 
 **Your answer:** Paste the image ID from before and after the rebuild. Why is it a problem for someone who uses your image that `0.1.0` now names a different image, and what should you have done instead?
 
-...
+Image ID before: d0b7182d8a18 
+Image ID after: 3350579ea0cb  
+
+It's a problem now because people who have already pulled the original version will keep running an old image while new users pull a different image under the same tag. Instead, it should be under a different tag when building a new/modified image.
